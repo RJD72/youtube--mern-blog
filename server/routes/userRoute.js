@@ -3,7 +3,6 @@ const verifyToken = require("../utils/verifyUser");
 
 const router = require("express").Router();
 
-router.get("/", userController.test);
 router.put("/update/:userId", verifyToken, userController.updateUser);
 router.delete("/delete-user/:userId", verifyToken, userController.deleteUser);
 router.post("/sign-out", userController.signOut);
