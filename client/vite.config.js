@@ -10,6 +10,9 @@ export default defineConfig({
         secure: false,
       },
     },
+    build: {
+      outDir: "dist", // Ensures the build output goes to `dist`
+    },
   },
   plugins: [react()],
 });
